@@ -1,11 +1,20 @@
-# If you do not have OpenSSL installed, update
-# the following line to use "http://" instead
 source 'https://rubygems.org'
 
-gem "middleman", "~>3.3.12"
+ruby '2.2.2'
 
-# Live-reloading plugin
-gem "middleman-livereload", "~> 3.1.0"
+gem 'middleman', '~>3.3.12'
+gem 'middleman-minify-html'
 
-gem "bootstrap-sass", :require => false
-gem "helio", :require => false
+gem 'bootstrap-sass', '~> 3.3.4'
+gem 'helio'
+
+group :production do
+  gem 'therubyracer'
+  gem 'oj'
+  gem 'puma'
+end
+
+gem 'middleman-livereload', '~> 3.1.0'
+gem 'pry'
+
+gem 'rack-contrib'
