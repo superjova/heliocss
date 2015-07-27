@@ -1,0 +1,405 @@
+---
+title: HELIO
+---
+
+<div class="container ph-5 mt-11">
+  <%= image_tag "helio.png", class: "img-responsive mh-a" %>
+</div>
+<div class="pa-6 mt-11 bg-2 c-15 fs-12 fw-2 bs-sld bwv-1 bc-5 text-center">
+  CONVENTIONS
+</div>
+<div class="pt-md-9 pb-xs-6 pb-md-11 bg-14">
+  <div class="container ph-5">
+    <div class="pa-6 mt-6 bg-15 bs-sld bwa-1 bc-13 bra-md-4">
+      <div class="mt-6-plus">
+        <div class="c-1 fs-8">
+          ORDER OF OPERATIONS
+        </div>
+        <div class="ml-4 mt-4">
+          <div class="mt-4-plus">
+            positions > padding > margin > dimensions > background > color > font > border > border radius > float
+          </div>
+          <div class="mt-4-plus">
+            left > right > top > bottom
+          </div>
+          <div class="mt-4-plus">
+            xs > sm > md > lg
+          </div>
+          <div class="mt-4-plus">
+            normal > -hover > -active > -plus
+          </div>
+        </div>
+      </div>
+      <div class="mt-6-plus">
+        <div class="c-1 fs-8">
+          CLASS NAMING
+        </div>
+        <div class="ml-4 mt-4">
+          <div class="mt-4-plus">
+            Add 1 to the number in the class name to increase strengh
+          </div>
+          <div class="mt-4-plus">
+            Subtract 1 to the number in the class name to decrease strengh
+          </div>
+          <div class="mt-4-plus">
+            0 will usually clear the trait
+          </div>
+        </div>
+      </div>
+      <div class="mt-6-plus">
+        <div class="c-1 fs-8">
+          CLASS MAGIC
+        </div>
+        <div class="ml-4 mt-4">
+          <div class="mt-4-plus">
+            <div>
+              Appending <b>-hover</b> to any class will activate the class when hovered.
+            </div>
+            <div class="pb-6 ml-4 mt-4">
+              <div class="row nmh-4">
+                <div class="col-md-6 ph-4 mt-4">
+                  <div class="bg-15 c-3">hover me</div>
+                  <div class="bg-15 c-3">hover me</div>
+                  <div class="bg-15 bg-1-hover c-3 c-15-hover">hover me</div>
+                </div>
+                <div class="col-md-6 ph-4 mt-4">
+                  <div>
+                    &lt;div class="bg-15 c-3"&gt;hover me&lt;/div&gt;
+                  </div>
+                  <div>
+                    &lt;div class="bg-15 c-3"&gt;hover me&lt;/div&gt;
+                  </div>
+                  <div>
+                    &lt;div class="bg-15 bg-1-hover c-3 c-15-hover"&gt;hover me&lt;/div&gt;
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4-plus">
+            <div>
+              Appending <b>-active</b> to any class will activates the class when ancestor has <b>active</b> class
+            </div>
+            <div class="pb-6 ml-4 mt-4">
+              <div class="row nmh-4">
+                <div class="col-md-6 ph-4 mt-4">
+                  <div><span class="c-8 c-1-active">nav item</span></div>
+                  <div class="active"><span class="c-8 c-1-active">active nav item</span></div>
+                  <div><span class="c-8 c-1-active">nav item</span></div>
+                </div>
+                <div class="col-md-6 ph-4 mt-4">
+                  <div>
+                    &lt;div&gt;&lt;span class="c-8 c-1-active"&gt;nav item&lt;/span&gt;&lt;/div&gt;
+                  </div>
+                  <div>
+                    &lt;div class="active"&gt;&lt;span class="c-8 c-1-active"&gt;active nav item&lt;/span&gt;&lt;/div&gt;
+                  </div>
+                  <div>
+                    &lt;div&gt;&lt;span class="c-8 c-1-active"&gt;nav item&lt;/span&gt;&lt;/div&gt;
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4-plus">
+            <div>
+              Appending <b>-plus</b> to any class will activate the class when the predecessor also has the <b>*-plus</b> class.
+            </div>
+            <div class="pb-6 ml-4 mt-4">
+              <div class="row nmh-4">
+                <div class="col-md-6 ph-4 mt-4">
+                  <div class="pa-4 bg-4">
+                    <div class="bg-15 mt-4-plus">no margin top</div>
+                    <div class="bg-15 mt-4-plus">margin top</div>
+                    <div class="bg-15 mt-4-plus">margin top</div>
+                  </div>
+                </div>
+                <div class="col-md-6 ph-4 mt-4">
+                  &lt;div class="pa-4 bg-4"&gt;
+                  <div class="ml-4">
+                    <div>
+                      &lt;div class="mt-4-plus"&gt;no margin top&lt;/div&gt;
+                    </div>
+                    <div>
+                      &lt;div class="mt-4-plus"&gt;margin top&lt;/div&gt;
+                    </div>
+                    <div>
+                      &lt;div class="mt-4-plus"&gt;margin top&lt;/div&gt;
+                    </div>
+                  </div>
+                  &lt;/div&gt;
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="pa-6 bg-2 c-15 fs-12 fw-2 bs-sld bwv-1 bc-5 text-center">
+  HOW TO
+</div>
+<div class="pt-md-9 pb-xs-6 pb-md-11 bg-14">
+  <div class="container ph-5">
+    <div class="row nmh-4 xs-sm-6">
+      <a href="#">
+        <div class="col-md-3 ph-4 mt-6">
+          <div class="rel-xs square-md pv-xs-8 pv-md-0 bg-15 c-4 c-1-hover bs-sld bwa-1 bc-13 bc-10-hover bra-md-4">
+            <div class="abs-xs top left bottom right">
+              <table class="da-a">
+                <tr>
+                  <td class="fs-9 fw-3 text-center">
+                    BORDER
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="col-md-3 ph-4 mt-6">
+          <div class="rel-xs square-md pv-xs-8 pv-md-0 bg-15 c-4 c-1-hover bs-sld bwa-1 bc-13 bc-10-hover bra-md-4">
+            <div class="abs-xs top left bottom right">
+              <table class="da-a">
+                <tr>
+                  <td class="fs-9 fw-3 text-center">
+                    COLOR
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="col-md-3 ph-4 mt-6">
+          <div class="rel-xs square-md pv-xs-8 pv-md-0 bg-15 c-4 c-1-hover bs-sld bwa-1 bc-13 bc-10-hover bra-md-4">
+            <div class="abs-xs top left bottom right">
+              <table class="da-a">
+                <tr>
+                  <td class="fs-9 fw-3 text-center">
+                    FADE
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="col-md-3 ph-4 mt-6">
+          <div class="rel-xs square-md pv-xs-8 pv-md-0 bg-15 c-4 c-1-hover bs-sld bwa-1 bc-13 bc-10-hover bra-md-4">
+            <div class="abs-xs top left bottom right">
+              <table class="da-a">
+                <tr>
+                  <td class="fs-9 fw-3 text-center">
+                    POSITION
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="col-md-3 ph-4 mt-6">
+          <div class="rel-xs square-md pv-xs-8 pv-md-0 bg-15 c-4 c-1-hover bs-sld bwa-1 bc-13 bc-10-hover bra-md-4">
+            <div class="abs-xs top left bottom right">
+              <table class="da-a">
+                <tr>
+                  <td class="fs-9 fw-3 text-center">
+                    SPACE
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="col-md-3 ph-4 mt-6">
+          <div class="rel-xs square-md pv-xs-8 pv-md-0 bg-15 c-4 c-1-hover bs-sld bwa-1 bc-13 bc-10-hover bra-md-4">
+            <div class="abs-xs top left bottom right">
+              <table class="da-a">
+                <tr>
+                  <td class="fs-9 fw-3 text-center">
+                    TEXT
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row nmh-4 mt-10">
+  <div class="col-md-3 ph-4 mt-6 fs-10 fw-3">
+    DEFAULTS
+  </div>
+  <div class="col-md-9 ph-4 mt-6">
+    <div class="mt-6-plus">
+      <div class="fw-3">
+        Shades
+      </div>
+      <div>
+        Prefixes
+      </div>
+      <div>
+        "c-", "bg-", "bc-"
+      </div>
+      <div>
+        Defaults
+      </div>
+      <div>
+        <table>
+          <tbody>
+            <% ["none", "#000000", "#111111", "#222222", "#333333", "#444444", "#555555","#666666", "#777777", "#888888", "#999999", "#AAAAAA", "#BBBBBB", "#CCCCCC", "#DDDDDD", "#EEEEEE", "#FFFFFF"].each_with_index do |value, index| %>
+              <tr>
+                <td class="pr-4">
+                  <div class="da-10 bg-<%= index %>"></div>
+                </td>
+                <td class="pr-5">
+                  <%= index %>
+                </td>
+                <td>
+                  <%= value %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="mt-6-plus">
+      <div class="fw-3">
+        Font Sizes
+      </div>
+      <div>
+        <table>
+          <tbody>
+            <% ["10px", "11px", "12px", "13px", "14px", "15px", "16px", "17px", "18px", "20px", "22px", "24px", "26px", "28px", "32px", "36px", "42px", "48px", "54px", "62px", "72px", "84px", "100px"].each_with_index do |value, index| %>
+              <tr>
+                <td class="pr-6">
+                  <%= index + 1 %>
+                </td>
+                <td class="pr-4">
+                  <%= value %>
+                </td>
+                <td>
+                  <div class="fs-<%= index + 1 %>">HELIO</div>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="mt-6-plus">
+      <div class="fw-3">
+        Font Weights
+      </div>
+      <div>
+        <table>
+          <tbody>
+            <% ["300", "400", "700"].each_with_index do |value, index| %>
+              <tr>
+                <td class="pr-6">
+                  <%= index + 1 %>
+                </td>
+                <td class="pr-4">
+                  <%= value %>
+                </td>
+                <td class="pr-4">
+                  <div class="fw-<%= index + 1 %>">HELIO</div>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="mt-6-plus">
+      <div class="fw-3">
+        Border Widths
+      </div>
+      <div>
+        <table>
+          <tbody>
+            <% ["0px", "1px", "2px", "5px"].each_with_index do |value, index| %>
+              <tr>
+                <td class="pr-4">
+                  <div class="da-10 bs-sld bwa-<%= index %> bc-1"></div>
+                </td>
+                <td class="pr-5">
+                  <%= index %>
+                </td>
+                <td>
+                  <%= value %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="mt-6-plus">
+      <div class="fw-3">
+        Border Radiuses
+      </div>
+      <div>
+        <table>
+          <tbody>
+            <% ["0px", "2px", "5px", "10px", "12px", "20px", "30px"].each_with_index do |value, index| %>
+              <tr>
+                <td class="pr-4">
+                  <div class="da-10 bs-sld bwa-1 bc-1 bra-<%= index %>"></div>
+                </td>
+                <td class="pr-5">
+                  <%= index %>
+                </td>
+                <td>
+                  <%= value %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="mt-6-plus">
+      <div class="fw-3">
+        Opacities
+      </div>
+      <div>
+        <table>
+          <tbody>
+            <% ["0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "100"].each_with_index do |value, index| %>
+              <tr>
+                <td class="pr-4">
+                  <div class="da-10 bg-1 opa-<%= index %>"></div>
+                </td>
+                <td class="pr-5">
+                  <%= index %>
+                </td>
+                <td>
+                  <% if index < 10 %>
+                    <%= value %>
+                  <% else %>
+                    a
+                  <% end %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
